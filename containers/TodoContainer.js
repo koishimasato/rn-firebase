@@ -2,11 +2,11 @@
 
 import React, { Component } from 'react';
 import ReactNative from 'react-native';
-import firebaseConfig from './firebaseConfig';
+import firebaseConfig from '../components/firebaseConfig';
 
-const StatusBar = require('./StatusBar');
-const ActionButton = require('./ActionButton');
-const ListItem = require('./ListItem');
+const StatusBar = require('../components/StatusBar');
+const ActionButton = require('../components/ActionButton');
+const ListItem = require('../components/ListItem');
 const styles = require('../styles.js');
 const firebase = require('firebase');
 
@@ -37,7 +37,7 @@ class TodoContainer extends Component {
   listenForItems(itemsRef) {
     itemsRef.on('value', (snap) => {
 
-      // get children as an array
+     // get children as an array
       var items = [];
       snap.forEach((child) => {
         items.push({

@@ -19,7 +19,7 @@ const {
 class ReactNativeTodo extends Component {
   render() {
     return (
-      <MessengerContainer/>
+      <TodoContainer/>
     );
   }
 }

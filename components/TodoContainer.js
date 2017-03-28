@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import ReactNative from 'react-native';
-import { firebaseConfig } from './firebaseConfig';
+import firebaseConfig from './firebaseConfig';
 
 const StatusBar = require('./StatusBar');
 const ActionButton = require('./ActionButton');

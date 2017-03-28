@@ -38,7 +38,7 @@ class TodoContainer extends Component {
     itemsRef.on('value', (snap) => {
 
      // get children as an array
-      var items = [];
+      const items = [];
       snap.forEach((child) => {
         items.push({
           title: child.val().title,

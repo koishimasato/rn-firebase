@@ -2,8 +2,8 @@
 
 import React, { Component } from 'react';
 import ReactNative from 'react-native';
-import TodoContainer from './components/TodoContainer'
-import MessengerContainer from './components/MessengerContainer'
+import TodoContainer from './containers/TodoContainer'
+import MessengerContainer from './containers/MessengerContainer'
 
 const {
   AppRegistry,

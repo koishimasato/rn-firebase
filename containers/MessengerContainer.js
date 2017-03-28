@@ -13,7 +13,7 @@ import {
   Navigator,
 } from 'react-native';
 /* import { firebaseConfig } from './firebaseConfig'; */
-import  firebaseConfig  from './firebaseConfig';
+import  firebaseConfig  from '../components/firebaseConfig';
 console.log(firebaseConfig);
 
 const GiftedMessenger = require('react-native-gifted-messenger');

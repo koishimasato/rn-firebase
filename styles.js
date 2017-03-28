@@ -8,6 +8,9 @@ var styles = StyleSheet.create({
   container: {
     backgroundColor: '#f2f2f2',
     flex: 1,
+    /* justifyContent: 'center', */
+    /* flexDirection: 'column', */
+    /* alignItems: 'center', */
   },
   listview: {
     flex: 1,
@@ -22,7 +25,7 @@ var styles = StyleSheet.create({
     paddingBottom: 16,
   },
   liContainer: {
-    flex: 2,
+    /* flex: 1, */
   },
   liText: {
     color: '#333',
@@ -54,15 +57,22 @@ var styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     textAlign: 'center',
+    height: 44,
   },
   action: {
+    height: 44,
     backgroundColor: constants.actionColor,
     borderColor: 'transparent',
     borderWidth: 1,
     paddingLeft: 16,
     paddingTop: 14,
     paddingBottom: 16,
+    marginBottom: 50,
   },
+  tab: {
+    backgroundColor:'white',
+    height: 40
+  }
 })
 
 module.exports = styles

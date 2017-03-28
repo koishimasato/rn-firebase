@@ -1509,7 +1509,7 @@ find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-firebase@^3.7.3:
+firebase@^3.7.2:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-3.7.3.tgz#5f143638a84874095a7faf411589e059ac419ccc"
   dependencies:
@@ -3032,6 +3032,10 @@ react-native-parsed-text@0.0.12:
     babel-plugin-transform-react-jsx "^6.0.18"
     babel-plugin-transform-regenerator "^6.0.18"
     babel-register "^6.3.13"
+
+react-native-tabs@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
 
 react-native@0.42.3:
   version "0.42.3"

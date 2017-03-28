@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import ReactNative from 'react-native';
 import firebaseConfig from '../components/firebaseConfig';
+import Tabs from 'react-native-tabs';
 
 const StatusBar = require('../components/StatusBar');
 const ActionButton = require('../components/ActionButton');
@@ -30,6 +31,7 @@ class TodoContainer extends Component {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+      page:'second',
     };
     this.itemsRef = firebaseApp.database().ref().child('items');
   }
@@ -63,7 +65,6 @@ class TodoContainer extends Component {
 
     return (
       <View style={styles.container}>
-
         <StatusBar title="Grocery List" />
 
         <ListView
@@ -71,9 +72,16 @@ class TodoContainer extends Component {
           renderRow={this._renderItem.bind(this)}
           enableEmptySections={true}
           style={styles.listview}/>
-
         <ActionButton onPress={this._addItem.bind(this)} title="Add" />
 
+        <Tabs selected={this.state.page} style={styles.tab}
+              selectedStyle={{color:'red'}} onSelect={el=>this.setState({page:el.props.name})}>
+            <Text name="first">First</Text>
+            <Text name="second" selectedIconStyle={{borderTopWidth:2,borderTopColor:'red'}}>Second</Text>
+            <Text name="third">Third</Text>
+            <Text name="fourth" selectedStyle={{color:'green'}}>Fourth</Text>
+            <Text name="fifth">Fifth</Text>
+        </Tabs>
       </View>
     );
   }

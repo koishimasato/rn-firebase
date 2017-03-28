@@ -1,7 +1,8 @@
 const React = require('react-native')
 const {StyleSheet} = React
 const constants = {
-  actionColor: '#24CE84'
+  /* actionColor: '#24CE84' */
+  actionColor: '#24EEFF'
 };
 
 var styles = StyleSheet.create({
@@ -68,6 +69,7 @@ var styles = StyleSheet.create({
     paddingTop: 14,
     paddingBottom: 16,
     marginBottom: 50,
+    /* position: 'absolute', */
   },
   tab: {
     backgroundColor:'white',

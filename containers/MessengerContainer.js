@@ -12,13 +12,11 @@ import {
   Text,
   Navigator,
 } from 'react-native';
-/* import { firebaseConfig } from './firebaseConfig'; */
 import  firebaseConfig  from '../components/firebaseConfig';
 console.log(firebaseConfig);
 
 const GiftedMessenger = require('react-native-gifted-messenger');
 const firebase = require('firebase');
-/* const MESSAGE_REF = 'https://react-native-chat-sample.firebaseio.com/messages'; */
 
 const STATUS_BAR_HEIGHT = 0;
 const CONTAINER_MARGIN = 20;
@@ -44,7 +42,6 @@ class MessengerContainer extends Component {
 
     const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-    /* this._messagesRef = new Firebase(MESSAGE_REF); */
     this._messagesRef = firebaseApp.database().ref().child('messages');
     this._messages = [];
     this.storageRef = firebase.storage().ref();

@@ -24,7 +24,6 @@ const {
 class TodoContainer extends Component {
 
   constructor(props) {
-    console.log("constructor");
     super(props);
 
     const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -56,12 +55,10 @@ class TodoContainer extends Component {
   }
 
   componentDidMount() {
-    console.log("mount");
     this.listenForItems(this.itemsRef);
   }
 
   render() {
-    console.log(this.state.dataSource);
 
     return (
       <View style={styles.container}>
